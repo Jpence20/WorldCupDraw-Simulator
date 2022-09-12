@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 Console.WriteLine("What is your Name");
-Console.ReadLine();
+string name = Console.ReadLine();
 Console.WriteLine("How are you today");
-Console.ReadLine();
+string mood =Console.ReadLine();
+Console.WriteLine($"Hi {name} so your feeling {mood} today");
+
