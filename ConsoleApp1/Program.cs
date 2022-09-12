@@ -2,3 +2,5 @@
 Console.WriteLine("Hello, World!");
 Console.WriteLine("What is your Name");
 Console.ReadLine();
+Console.WriteLine("How are you today");
+Console.ReadLine();
