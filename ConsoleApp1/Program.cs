@@ -1,4 +1,5 @@
 ﻿
+
 Draw();
 
 void Draw()
@@ -16,3 +17,6 @@ void Draw()
     int index = rand.Next(pot1.Length);
     Console.WriteLine($"{pot1[index]}");
 }
+
+
+
