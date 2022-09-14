@@ -27,6 +27,12 @@ What I have done.
 At the moment I have it setup to draw one team from each pot and put them in 8 different groups.
 
 What I still need to figure out
-1)How to make sure I don't get repeat nations, I haven't figure out how to stop drawing a nation once its already been picked.
-2)How to then place them based on group postion. So, if a team will be placed in spot 2-4 of their group. (spot 1 is always taken up by the first team drawn into a group.
-3) how to prevent a group from having too many countries from the same region. with the exception being a group can have two european countries.
+
+1) How to make sure I don't get repeat nations, I haven't figure out how to stop drawing a nation once its already been picked.
+
+2) How to then place them based on group postion. So, if a team will be placed in spot 2-4 of their group. (spot 1 is always taken up by the first team drawn into a group).
+
+3) How to prevent a group from having too many countries from the same region. with the exception being a group can have two european countries.
+
+
+P.S: I'm still figuring out C# so any help would be appericate!
