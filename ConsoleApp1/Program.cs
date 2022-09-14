@@ -4,6 +4,7 @@ Draw();
 void Draw()
 {//pots for the countries
     String[] pot1 = { "Qatar", "Brazil", "Belgium", "France", "Argentina", "Engalnd", "Spain", "Portugal" };
+    
     String[] pot2 = { "Mexico", "Netherlands", "Denmark", "Germany", "Uruguay", "Switzerland", "United States", "Crotia" };
     String[] pot3 = { "Senegal", "IR Iran", "Japan", "Morocco", "Serbia", "Poland", "South Korea", "Tunisia" };
     String[] pot4 = { "Cameroon", "Canda", "Ecuador", "Saudi Arabia", "Ghana", "Wales", "Costa Rica", "Australia" };
@@ -19,10 +20,13 @@ void Draw()
             //pot 1 in group A is the only one that will have a fixed country as Qatar is the host nation, so they get put in group A
             Console.WriteLine("Group A");
             Console.WriteLine($"{pot1[0]},{pot2[index]},{pot3[index]},{pot4[index]}");
+            var countriesList = pot1.ToList();
+            countriesList.Remove("Qatar");
            
         }
         if (i == 2)
         {
+           
             int index = randomSplit(pot1, pot2, pot3, pot4);
 
             Console.WriteLine("Group B");
@@ -69,6 +73,7 @@ void Draw()
 
             Console.WriteLine("Group H");
             Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+            
         }
     }
 
