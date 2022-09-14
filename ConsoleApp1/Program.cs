@@ -13,13 +13,63 @@ void Draw()
 
     for (int i = 0; i < 8;i++)
     {
-        int index = randomSplit(pot1, pot2, pot3, pot4);
+        if (i == 1)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
 
-        Console.WriteLine("Group A");
-        Console.WriteLine($"{pot1[index]}");
-        Console.WriteLine($"{pot2[index]}");
-        Console.WriteLine($"{pot3[index]}");
-        Console.WriteLine($"{pot4[index]}");
+            Console.WriteLine("Group A");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+           
+        }
+        if (i == 2)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group B");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 3)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group C");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 4)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group D");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 5)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group E");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 6)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group F");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 7)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group G");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
+        if (i == 8)
+        {
+            int index = randomSplit(pot1, pot2, pot3, pot4);
+
+            Console.WriteLine("Group H");
+            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
+        }
     }
 
     
