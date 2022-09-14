@@ -11,22 +11,18 @@ void Draw()
     String[] Groups = { "A", "B", "C", "D", "E", "F", "G", "H" };
 
 
+    for (int i = 0; i < 8;i++)
+    {
+        int index = randomSplit(pot1, pot2, pot3, pot4);
 
+        Console.WriteLine("Group A");
+        Console.WriteLine($"{pot1[index]}");
+        Console.WriteLine($"{pot2[index]}");
+        Console.WriteLine($"{pot3[index]}");
+        Console.WriteLine($"{pot4[index]}");
+    }
 
-    //Writes out a group
-    int index= randomSplit(pot1, pot2, pot3, pot4);
-
-    Console.WriteLine("Group A");
-    Console.WriteLine($"{pot1[index]}");
-    Console.WriteLine($"{pot2[index]}");
-    Console.WriteLine($"{pot3[index]}");
-    Console.WriteLine($"{pot4[index]}");
-
-    Console.WriteLine("Group B");
-    Console.WriteLine($"{pot1[index]}");
-    Console.WriteLine($"{pot2[index]}");
-    Console.WriteLine($"{pot3[index]}");
-    Console.WriteLine($"{pot4[index]}");
+    
 
 }
 int randomSplit(string[] pot1, string[] pot2, string[] pot3, string[] pot4)
@@ -36,7 +32,4 @@ int randomSplit(string[] pot1, string[] pot2, string[] pot3, string[] pot4)
     int index = rand.Next(pot1.Length);
     return index;
 }
-for(int i = 0; i < 7;)
-{
 
-}
