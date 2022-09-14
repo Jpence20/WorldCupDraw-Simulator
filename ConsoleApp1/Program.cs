@@ -14,8 +14,7 @@ void Draw()
     for (int i = 0; i < 8;i++)
     {
         string[] letters = { "A", "B", "C", "D", "E", "F", "G", "H" };
-        if (i == 0)
-        {
+        
             int index = randomSplit(pot1, pot2, pot3, pot4);
 
 
@@ -23,59 +22,8 @@ void Draw()
             Console.WriteLine("Group " + letters[i]);
             Console.WriteLine($"{pot1[0]},{pot2[index]},{pot3[index]},{pot4[index]}");
           
-           
-        }
-        if (i == 1)
-        {
-            
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-           
-            Console.WriteLine("Group " + letters[i]);
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 2)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
 
-            Console.WriteLine("Group C");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 3)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-
-            Console.WriteLine("Group D");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 4)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-
-            Console.WriteLine("Group E");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 5)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-
-            Console.WriteLine("Group F");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 6)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-
-            Console.WriteLine("Group G");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-        }
-        if (i == 7)
-        {
-            int index = randomSplit(pot1, pot2, pot3, pot4);
-
-            Console.WriteLine("Group H");
-            Console.WriteLine($"{pot1[index]},{pot2[index]},{pot3[index]},{pot4[index]}");
-            
-        }
+       
     }
 
     
