@@ -21,7 +21,7 @@ class program
 
     static void Draw()
     {
-
+        //pots
         List<string> pot1 = new List<string>();
         pot1.Add("Qatar");
         pot1.Add("Brazil");
@@ -91,6 +91,7 @@ class program
 
                 Console.WriteLine($"Group {letters[i]}\r\n");
                 Console.WriteLine($"{pot1[0]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
+                //removes whichever team was just picked
                 pot1.Remove(pot1[0]);
                 pot2.Remove(pot2[index2]);
                 pot3.Remove(pot3[index3]);
@@ -105,6 +106,7 @@ class program
 
             Console.WriteLine($"Group {letters[i]}\r\n");
             Console.WriteLine($"{pot1[index]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
+            //removes whichever team was just picked
             pot1.Remove(pot1[index]);
             pot2.Remove(pot2[index2]);
             pot3.Remove(pot3[index3]);
