@@ -19,8 +19,6 @@ class program
 
     }
 
-
-
     static void Draw()
     {
 
@@ -77,7 +75,7 @@ class program
             //The letters array is used to update the group names
             string[] letters = { "A", "B", "C", "D", "E", "F", "G", "H" };
 
-            
+
             int index = Teams.randomSplit(pot1);
             int index2 = Teams.randomSplit(pot2);
             int index3 = Teams.randomSplit(pot3);
@@ -90,7 +88,7 @@ class program
 
             if (i == 0)
             {
-                
+
                 Console.WriteLine($"Group {letters[i]}\r\n");
                 Console.WriteLine($"{pot1[0]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
                 pot1.Remove(pot1[0]);
@@ -98,13 +96,13 @@ class program
                 pot3.Remove(pot3[index3]);
                 pot4.Remove(pot4[index4]);
                 i++;
-                
+
             }
 
 
 
             //Fills out the rest of the groups.
-            
+
             Console.WriteLine($"Group {letters[i]}\r\n");
             Console.WriteLine($"{pot1[index]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
             pot1.Remove(pot1[index]);
@@ -115,11 +113,12 @@ class program
 
         }
 
-
-
     }
-   
-   
+
+
+
+
+
 }
 
 
