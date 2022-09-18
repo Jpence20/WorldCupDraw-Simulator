@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography.X509Certificates;
 
 class program
 {
@@ -9,8 +10,12 @@ class program
 
     static void Main(string[] args)
     {
-        
+     
         Draw();
+        
+       
+        
+       
 
     }
 
@@ -19,12 +24,51 @@ class program
     static void Draw()
     {
 
-        String[] pot1 = { "Qatar", "Brazil", "Belgium", "France", "Argentina", "Engalnd", "Spain", "Portugal" };
-        String[] pot2 = { "Mexico", "Netherlands", "Denmark", "Germany", "Uruguay", "Switzerland", "United States", "Crotia" };
-        String[] pot3 = { "Senegal", "IR Iran", "Japan", "Morocco", "Serbia", "Poland", "South Korea", "Tunisia" };
-        String[] pot4 = { "Cameroon", "Canda", "Ecuador", "Saudi Arabia", "Ghana", "Wales", "Costa Rica", "Australia" };
+        List<string> pot1 = new List<string>();
+        pot1.Add("Qatar");
+        pot1.Add("Brazil");
+        pot1.Add("Belgium");
+        pot1.Add("France");
+        pot1.Add("Argentina");
+        pot1.Add("England");
+        pot1.Add("Spain");
+        pot1.Add("Portugal");
 
-        
+        List<string> pot2 = new List<string>();
+        pot2.Add("Mexico");
+        pot2.Add("Netherlands");
+        pot2.Add("Denmark");
+        pot2.Add("Germany");
+        pot2.Add("Uruguay");
+        pot2.Add("Switzerland");
+        pot2.Add("United States");
+        pot2.Add("Crotia");
+
+        List<string> pot3 = new List<string>();
+        pot3.Add("Senegal");
+        pot3.Add("IR Iran");
+        pot3.Add("Japan");
+        pot3.Add("Morocco");
+        pot3.Add("Serbia");
+        pot3.Add("Poland");
+        pot3.Add("South Korea");
+        pot3.Add("Tunisia");
+
+        List<string> pot4 = new List<string>();
+        pot4.Add("Cameroon");
+        pot4.Add("Canada");
+        pot4.Add("Ecuador");
+        pot4.Add("Saudi Arabia");
+        pot4.Add("Ghana");
+        pot4.Add("Wales");
+        pot4.Add("Costa Rica");
+        pot4.Add("Australia");
+
+
+
+
+
+
         // The for loop divides the countries into 8 different groups
 
 
@@ -40,6 +84,7 @@ class program
             int index4 = Teams.randomSplit(pot4);
 
 
+
             //Qatar will always be in group A, since they are the host nations
 
 
@@ -48,8 +93,10 @@ class program
                 
                 Console.WriteLine($"Group {letters[i]}\r\n");
                 Console.WriteLine($"{pot1[0]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
-               
-
+                pot1.Remove(pot1[0]);
+                pot2.Remove(pot2[index2]);
+                pot3.Remove(pot3[index3]);
+                pot4.Remove(pot4[index4]);
                 i++;
                 
             }
@@ -57,9 +104,13 @@ class program
 
 
             //Fills out the rest of the groups.
+            
             Console.WriteLine($"Group {letters[i]}\r\n");
             Console.WriteLine($"{pot1[index]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
-           
+            pot1.Remove(pot1[index]);
+            pot2.Remove(pot2[index2]);
+            pot3.Remove(pot3[index3]);
+            pot4.Remove(pot4[index4]);
 
 
         }
@@ -67,7 +118,7 @@ class program
 
 
     }
-
+   
    
 }
 

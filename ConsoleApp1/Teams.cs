@@ -3,18 +3,16 @@
 public class Teams
 {
   
-    public static int randomSplit(string[] pot)
+    public static int randomSplit(List<string> pot)
     {
 
         Random rand = new Random();
-        int index = rand.Next(pot.Length);
+        int index = rand.Next(pot.Count);
         return index;
 
     }
-    public static void IsDrawn(int index, string[] pot)
-    {
-      
-    }
-
-
+   
+    
+   
+    
 }
