@@ -45,12 +45,13 @@ class program
 
             if (i == 0)
             {
-
+                
                 Console.WriteLine($"Group {letters[i]}\r\n");
                 Console.WriteLine($"{pot1[0]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
-
+               
 
                 i++;
+                
             }
 
 
@@ -58,7 +59,7 @@ class program
             //Fills out the rest of the groups.
             Console.WriteLine($"Group {letters[i]}\r\n");
             Console.WriteLine($"{pot1[index]}, {pot2[index2]}, {pot3[index3]}, {pot4[index4]}\r\n");
-
+           
 
 
         }

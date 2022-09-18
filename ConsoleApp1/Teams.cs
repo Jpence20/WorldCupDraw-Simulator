@@ -11,9 +11,9 @@ public class Teams
         return index;
 
     }
-    public static void IsDrawn()
+    public static void IsDrawn(int index, string[] pot)
     {
-
+      
     }
 
 
