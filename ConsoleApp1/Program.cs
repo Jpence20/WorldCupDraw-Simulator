@@ -10,7 +10,7 @@ class program
 
     static void Main(string[] args)
     {
-     
+
         Draw();
         
        
@@ -72,7 +72,7 @@ class program
 
         for (int i = 0; i < 8; i++)
         {
-            //The letters array is used to update the group names
+            //The letters array is used to update the group names and position in group
             string[] letters = { "A", "B", "C", "D", "E", "F", "G", "H" };
 
 
@@ -91,7 +91,9 @@ class program
 
                 Console.WriteLine($"Group {letters[i]}\r\n");
                 Console.WriteLine($"{letters[i]}1 - {pot1[0]}, {letters[i]}2 - {pot2[index2]}, {letters[i]}3 - {pot3[index3]}, {letters[i]}4 - {pot4[index4]}\r\n");
+
                 //removes whichever team was just picked
+
                 pot1.Remove(pot1[0]);
                 pot2.Remove(pot2[index2]);
                 pot3.Remove(pot3[index3]);
@@ -106,7 +108,9 @@ class program
 
             Console.WriteLine($"Group {letters[i]}\r\n");
             Console.WriteLine($"{letters[i]}1 - {pot1[index]}, {letters[i]}2 - {pot2[index2]}, {letters[i]}3 - {pot3[index3]}, {letters[i]}4 - {pot4[index4]}\r\n");
+
             //removes whichever team was just picked
+
             pot1.Remove(pot1[index]);
             pot2.Remove(pot2[index2]);
             pot3.Remove(pot3[index3]);
